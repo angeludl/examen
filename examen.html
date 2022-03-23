@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 5 - Ahora desaparecemos </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ahora desaparecemos">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="bejarano barajas">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+	
+		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		  <link rel="stylesheet" href="estilos2.css" type="text/css">
+	</head>
+
+	<body>
+		<div class="container principal">
+		<h1>Ejercicio de examen</h1>
+        <p>A continuación se muestran tres preguntas cada una con dos opciones, una correcta y una incorrecta. La pregunta 1 nos muestra el ejemplo de cómo deben comportarse la pregunta 2 y 3</p>
+        <p>Replica en las preguntas 2 y 3 la interacción de la pregunta 1.</p>
+        <p>Dentro de la etiqueta script se encuentran dos comentarios en donde deben colocarse las instrucciones para la pregunta 2 y 3.</p>
+       
+        <p>1. Los colores de la bandera de México son:</p>
+		<p><a href="#url" class="btn btn-primary btn-lg" id="respuesta1">Azul, amarillo y blanco</a>
+		<a href="#url" class="btn btn-primary btn-lg" id="respuesta2">Verde, blanco y rojo</a>
+		</p>
+
+		
+        <p>2. Los colores de la bandera de México son:</p>
+		<p><a href="#url" class="btn btn-primary btn-lg" id="respuesta3">Un águla devorando a una serpiente</a>
+		<a href="#url" class="btn btn-primary btn-lg" id="respuesta4">Un jaguar devorando a una serpiente</a>
+		</p>
+
+
+        <p>3. El color verde simboliza:</p>
+        <p><a href="#url" class="btn btn-primary btn-lg" id="respuesta5">La esperanza</a>
+		<a href="#url" class="btn btn-primary btn-lg" id="respuesta6">La sangre derramada</a></p>
+
+
+        <p><a href="examen.html" class="btn btn-info btn-sm">Recargar la página</a></p>
+        <p>Nota: podrás tener un punto extra en este ejercicio si mejoras los estilos aplicados.</p>
+		</div>	
+
+
+
+
+        <script>
+            $(document).ready(function(){
+              $("#respuesta1").click(function(){
+                $("#respuesta1").fadeOut(1000);
+            
+              });
+              $("#respuesta2").click(function(){
+                $("#respuesta1").fadeOut(1000);
+            
+              });
+              // aquí inician las instrucciones para la pregunta 2
+              $(document).ready(function(){
+              $("#respuesta3").click(function(){
+                $("#respuesta4").fadeOut(1000);
+            
+              });
+              $("#respuesta3").click(function(){
+                $("#respuesta4").fadeOut(1000);
+            
+              });          
+
+            });    
+              // aquí inician las instrucciones para la pregunta 3
+
+
+              $(document).ready(function(){
+              $("#respuesta5").click(function(){
+                $("#respuesta6").fadeOut(1000);
+            
+              });
+              $("#respuesta5").click(function(){
+                $("#respuesta6").fadeOut(1000);
+            
+              });          
+
+            });    
+
+              
+            });
+
+            </script>
+	</body>
+</html>
